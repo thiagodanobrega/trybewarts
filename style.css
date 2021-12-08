@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inknut Antiqua, serif;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
+  gap: 5px;
+}
+
+#email , #senha {
+  height: 40px;
+  width: 200px;
+  border: 1px solid rgb(81, 74, 146);
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: Inknut Antiqua, serif;
+  font-size: 12px;
+}
+
+#btn-login {
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  font-family: Inknut Antiqua, serif;
+  cursor: pointer;
+  background-color: rgb(81, 74, 146);
+  color: white;
+  font-size: 12px;
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+#btn-login:hover {
+  opacity: 1;
+}
+
+.trybewarts-header-logo {
+  width: 70px;
+  margin-left: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  background: linear-gradient(#F0F8FF, #f0f8ffb2
+),
+    url('./images/hogwarts.jpg');
+  /* background-image: linear-gradient(
+    rgba(247, 242, 242, 0.479), rgba(243, 235, 235, 0.445)
+  ),
+    url('./images/hogwarts-backdrop-1500.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 20px 40px;
+  padding: 15px;
+  border: 1px solid rgb(172, 172, 172);
+  font-size: 16px;
+  align-self: auto;
+}
+
+#evaluation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  color: rgb(81, 74, 146);
+  line-height: 1.5em;
+}
+
+label {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  color: rgb(81, 74, 146);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#input-name , #input-lastname , #input-email , #house {
+  height: 40px;
+  border: 1px solid rgb(81, 74, 146);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+  padding-left: 10px;
+  font-family: Inknut Antiqua, serif;
+  font-size: 12px;
+}
+
+#input-name , #input-lastname {
+  width: 100%;
+}
+
+#input-email {
+  width: 50%;
+}
+
+#label {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+#house {
+  width: 82%;
+}
+
+#input-name:focus , #input-lastname:focus , #input-email:focus, #house:focus , #email:focus , #senha:focus {
+  background: #E0E0F8;
+}
+
+.check-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.radio-family {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.checkbox {
+  display: flex;
+  gap: 20px;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rate [ name *= 'rate' ] {
+  margin-left: 5px;
+}
+
+#textarea {
+  border-radius: 5px;
+  border: 1px solid rgb(81, 74, 146);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  outline: none;
+  padding: 20px;
+}
+
+#textarea:focus {
+  background: #E0E0F8;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+#counter {
+  text-align: end;
+  position: relative;
+  top: -40px;
+  right: 10px;
+  color: black;
+}
+
+#label-infos {
+  margin-top: -40px;
+}
+
+#submit-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: Inknut Antiqua, serif;
+  cursor: pointer;
+  background-color: rgb(81, 74, 146);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+#submit-btn:disabled {
+  opacity: 0.5;
+}
+
+#submit-btn:enabled {
+  opacity: 0.8;
+}
+
+#submit-btn:enabled:hover {
+  opacity: 1;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.container-form {
+  display: flex;
+  margin: 20vh 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(172, 172, 172);
+  transition: 0.3s;
+}
+
+.containerGitnória {
+  border: 1px solid rgb(168, 13, 13);
+}
+
+.containerReactpuff {
+  border: 1px solid rgb(13, 23, 168);
+}
+
+.containerCorvinode {
+  border: 1px solid rgb(10, 129, 30);
+}
+
+.containerPytherina {
+  border: 1px solid rgb(167, 140, 23);
+}
+
+.divGitnória , .divReactpuff , .divCorvinode , .divPytherina {
+  margin: 15px;
+  flex-basis: 50%;
+  line-height: 2.2em;
+  word-break: break-word;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.divGitnória {
+  color: rgb(168, 13, 13);
+}
+
+.divReactpuff {
+  color: rgb(13, 23, 168);
+}
+
+.divCorvinode {
+  color: rgb(10, 129, 30);
+}
+
+.divPytherina {
+  color: rgb(167, 140, 23);
+}
+
+.Gitnória , .Reactpuff , .Corvinode , .Pytherina {
+  flex-basis: 25%;
+  border-radius: 10px 0 0 10px;
+}
+
+.Gitnória {
+  background: url('./images/vermelho.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Reactpuff {
+  background: url('./images/azul.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Corvinode {
+  background: url('./images/verde.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Pytherina {
+  background: url('./images/amarelo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ==============Rodapé============== */
+footer {
+  text-align: center;
+  background-color: rgb(65, 68, 67);
+  padding: 5px;
+  color: white;
+}
+
+/* ==============Responsividade============== */
+
+@media screen and ( max-width : 1210px ) {
+
+  header , .trybewarts-login {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #trybewarts-forms-logo {
+    display: none;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  .trybewarts-header-logo {
+    margin-top: 15px;
+  }
+
+  #btn-login {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .checkbox {
+    display: block;
+  }
+}
+
+@media screen and ( max-width : 800px ) {
+
+  .rate-container {
+    flex-direction: column;
+  }
+
+  .rate [ name *= 'rate' ] {
+    margin-left: 0;
+  }
+
+  .container-form {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and ( max-width : 650px ) {
+
+  .check-container {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and ( max-width : 500px ) {
+
+  .input-container {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  #input-email {
+    width: 100%;
+  }
+
+  #label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #house {
+    margin-left: 3px;
+    width: 100%;
+  }
+}
+
